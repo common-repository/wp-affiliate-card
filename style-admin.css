@@ -1,0 +1,208 @@
+@charset "utf-8";
+
+/*
+  @ color
+  https://encycolorpedia.jp/1abc9c
+*/
+
+.aficard-wrapper {
+    line-height: 1;
+    border: 1px solid #1ABC9C;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.aficard-header {
+    position: relative;
+    padding: .5em .8em;
+    color: #fff;
+    font-size: 1.3em;
+    background-color: #1ABC9C;
+}
+
+.aficard-linkopener-button {
+    position: absolute;
+    top: .3em;
+    right: .3em;
+    width: 26px;
+    height: 26px;
+    font-size: 26px;
+}
+
+.aficard-linkopener-input {
+    position: absolute;
+    top: .4em;
+    right: .5em;
+    width: 12em;
+    padding: .1em 1em 0 1em !important;
+    font-size: .6em;
+    border: 1px solid #1ABC9C !important;
+    border-radius: 14px !important;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    transition-duration: 1s;
+}
+
+
+
+.aficard-wrapper textarea {
+    padding: 1em 1em .8em !important;
+    color: #008080 !important;
+    border-radius: 0 !important;
+}
+
+.aficard-wrapper textarea:focus {
+    box-shadow: none !important;
+    background-color: #EDFFF6;
+}
+
+.aficard-wrapper textarea::placeholder {
+    color: #191e23 !important;
+}
+
+.aficard-wrapper textarea:-ms-input-placeholder {
+    color: #191e23 !important;
+}
+
+.aficard-wrapper textarea::-ms-input-placeholder {
+    color: #191e23 !important;
+}
+
+
+.aficard-main_description_div {
+    display: flex;
+    width: 100%;
+    position: relative;
+    margin-bottom: .8em;
+    border-top: 1px solid #1ABC9C !important;
+}
+
+.aficard-main_description_div textarea {
+    min-height: 150px;
+}
+
+.aficard-main_description_div textarea:first-child {
+    min-height: auto;
+    flex-basis: auto;
+}
+
+.aficard-main_description_tmb {
+    display: inline-flex;
+    flex-basis: 150px;
+    height: 150px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.aficard-main_description_div img {
+    max-width: 150px;
+    max-height: 150px;
+    margin: auto;
+}
+
+.aficard-main_description {
+    display: inline-flex;
+    flex-basis: 448px;
+}
+
+
+.aficard-main_description_div img:after {
+    content: "\f225";
+    display: block;
+    z-index: 2;
+    width: 150px;
+    height: 150px;
+    padding: 56px;
+    font-family: dashicons;
+    font-size: 36px;
+    color: #fff;
+    background-color: orange;
+}
+
+/*
+.aficard-main_description_div img:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 150px;
+    height: calc(100% + 10px);
+    background-color: rgb(230, 230, 230);
+    border: 2px dotted rgb(200, 200, 200);
+    border-radius: 5px;
+}
+*/
+
+.aficard-wrapper .aficard-url {
+    position: relative;
+    margin-bottom: 0;
+    padding: 0 1em 0 7.4em;
+}
+
+.aficard-url label {
+    display: inline-block;
+    text-align: center;
+    line-height: 1.6;
+    width: 7em;
+    position: absolute;
+    top: .6em;
+    left: 0;
+    margin-left: .6em;
+    padding: 0 .8em;
+    font-size: .9em;
+    color: #fff;
+    background-color: #999;
+    border-radius: 3px;
+}
+
+.aficard-url input[type=text] {
+    min-height: 1em;
+    padding: .6em .2em .5em;
+    border: none;
+
+    border-bottom: 1px solid #1ABC9C;
+    border-radius: 0;
+}
+
+.aficard-url input[type=text]:focus {
+    box-shadow: none;
+    background-color: #edfff6;
+}
+
+
+
+
+.aficard-url_amazon label {
+    background-color: #F8991D;
+}
+
+.aficard-url_rakuten label {
+    background-color: #BF0000;
+}
+
+.aficard-url_yahoo label {
+    background-color: #F70031;
+}
+
+.aficard-url_yodobashi label {
+    background-color: #D2090F;
+}
+
+.aficard-mainlink {
+    margin: 1.6em 0 0 0 !important;
+    padding: 1.3em 1em 1em 1.3em;
+    background-color: #edfff6;
+}
+
+.aficard-mainlink .components-radio-control__option {
+    display: inline-block;
+    margin-left: 1.5em;
+    font-weight: bold;
+}
+
+.aficard-mainlink input[type=radio] {
+    margin-right: .5em;
+}

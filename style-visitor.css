@@ -1,0 +1,178 @@
+.aficard {
+    display: table;
+    width: 100%;
+    max-width: 620px;
+    box-sizing: border-box;
+    margin-bottom: 1em;
+    padding: 1em;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: .5em;
+}
+
+.afi_main_image_link {
+    display: table-cell;
+    width: 30%;
+    text-align: center;
+}
+
+.afi_main_image {
+    -webkit-box-shadow: 1px 1px 1px #aaa;
+    -moz-box-shadow: 1px 1px 1px #aaa;
+    -ms-box-shadow: 1px 1px 1px #aaa;
+    -o-box-shadow: 1px 1px 1px #aaa;
+    box-shadow: 1px 1px 1px #aaa;
+}
+
+.afi_info {
+    display: table-cell;
+    width: 70%;
+    padding-left: 1.5em;
+}
+
+.afi_main_title {
+    font-weight: bold;
+}
+
+.afi_main_description {
+    margin-bottom: 1em;
+    font-size: .8em;
+}
+
+.afi_button_link {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.afi_button_link a {
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 2% 1%;
+    padding: .5em;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+    color: #fff;
+    border-radius: 3px;
+    outline: none !important;
+}
+
+/*
+.afi_button_link a:not([href]) {
+    display: none !important;
+    font-size: 1px;
+}*/
+
+.afi_url_amazon {
+    background-color: #F8991D;
+    -webkit-box-shadow: 0 5px 0 #d68112;
+    -moz-box-shadow: 0 5px 0 #d68112;
+    -ms-box-shadow: 0 5px 0 #d68112;
+    -o-box-shadow: 0 5px 0 #d68112;
+    box-shadow: 0 5px 0 #d68112;
+}
+
+.afi_url_rakuten {
+    background-color: #BF0000;
+    -webkit-box-shadow: 0 5px 0 #980000;
+    -moz-box-shadow: 0 5px 0 #980000;
+    -ms-box-shadow: 0 5px 0 #980000;
+    -o-box-shadow: 0 5px 0 #980000;
+    box-shadow: 0 5px 0 #980000;
+}
+
+.afi_url_yahoo {
+    background-color: #F70031;
+    -webkit-box-shadow: 0 5px 0 #ce0029;
+    -moz-box-shadow: 0 5px 0 #ce0029;
+    -ms-box-shadow: 0 5px 0 #ce0029;
+    -o-box-shadow: 0 5px 0 #ce0029;
+    box-shadow: 0 5px 0 #ce0029;
+}
+
+.afi_url_yodobashi {
+    background-color: #D2090F;
+    -webkit-box-shadow: 0 5px 0 #a7070c;
+    -moz-box-shadow: 0 5px 0 #a7070c;
+    -ms-box-shadow: 0 5px 0 #a7070c;
+    -o-box-shadow: 0 5px 0 #a7070c;
+    box-shadow: 0 5px 0 #a7070c;
+}
+
+/* 1つの場合 */
+.afi_button_link a:only-child {}
+
+/* 2つの場合 */
+.afi_button_link a:first-child:nth-last-child(2),
+.afi_button_link a:first-child:nth-last-child(2)~.afi_link {
+    width: 46%;
+}
+
+/* 3つの場合 */
+.afi_button_link a:first-child:nth-last-child(3),
+.afi_button_link a:first-child:nth-last-child(3)~.afi_link {
+    width: 31%;
+}
+
+/* 4つの場合 */
+.afi_button_link a:first-child:nth-last-child(4),
+.afi_button_link a:first-child:nth-last-child(4)~.afi_link {
+    width: 46%;
+}
+
+
+@media screen and (max-width: 767px) {
+
+    .afi_main_image_link {
+        display: block;
+        width: 100%;
+    }
+
+    .afi_main_image_link img {
+        max-width: 100%;
+    }
+
+    .afi_info {
+        display: block;
+        width: 100%;
+        padding: 1.2em .5em .5em;
+    }
+
+    .afi_main_description {
+        padding-top: .4em;
+    }
+
+    .afi_button_link {
+        width: 100%;
+    }
+
+
+    /* 1つの場合 */
+    .afi_button_link a:only-child {
+        width: 100%;
+    }
+
+    /* 2つの場合 */
+    .afi_button_link a:first-child:nth-last-child(2),
+    .afi_button_link a:first-child:nth-last-child(2)~.afi_link {
+        width: 46%;
+    }
+
+    /* 3つの場合 */
+    .afi_button_link a:first-child:nth-last-child(3),
+    .afi_button_link a:first-child:nth-last-child(3)~.afi_link {
+        width: 31%;
+    }
+
+    /* 4つの場合 */
+    .afi_button_link a:first-child:nth-last-child(4),
+    .afi_button_link a:first-child:nth-last-child(4)~.afi_link {
+        width: 46%;
+    }
+
+}
